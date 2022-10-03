@@ -1,0 +1,24 @@
+.section {
+  &-feature {
+    background: url(../images/feature/1.webp) no-repeat center / cover;
+    color: #fff;
+    .section-header {
+      padding-bottom: 4rem;
+      @include media(768px) {
+        padding-bottom: 0;
+      }
+    }
+    &-content {
+      @include media(991px) {
+        padding: 3rem;
+      }
+      &-item {
+        h3 {
+          font-family: serif;
+          margin-bottom: 1.5rem;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}

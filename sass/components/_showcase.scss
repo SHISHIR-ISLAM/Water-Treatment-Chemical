@@ -1,0 +1,43 @@
+.section {
+    &-showcase {
+        min-height: 100vh;
+        background: url(../images/showcase/1.webp) no-repeat center /cover; 
+        display: flex;
+        justify-content: center;
+        color: #fff;
+        font-family: serif;
+
+        @include media(991px) {
+            padding: 5rem 0;
+            text-align: center;
+            
+        }
+
+        &-content {
+            height: 100%;
+            &-text {
+                h1 {
+                    font-size: 3.3rem;
+                    
+                }
+                h4 {
+                    font-size: 2rem;
+                    margin-bottom: 1.5rem;
+                }
+                h2 {
+                    font-size: 3rem;
+                    margin-bottom: 1.5rem;
+                }
+                p {
+                    font-size: 2rem;
+                }
+            }
+
+            &-video {
+                video {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,32 @@
+.section {
+  &-about {
+    &-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center; 
+      gap: 5rem;
+
+      @include media(991px) {
+        grid-template-columns: 1fr;
+        gap: 2rem !important;
+      }
+      &-text {
+        h2 {
+            padding-bottom: .7rem;
+          font-size: 4rem;
+          font-weight: bold;
+        }
+        p {
+          margin-bottom: 1.5rem;
+          font-family: serif;
+        }
+      }
+
+      &-img {
+        img {
+          min-height: 100%;
+        }
+      }
+    }
+  }
+}

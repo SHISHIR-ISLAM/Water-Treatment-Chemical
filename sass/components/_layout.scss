@@ -1,0 +1,34 @@
+.section {
+    &-layout {
+        background:linear-gradient(rgba(0, 0, 0, 0.174), rgba(3, 3, 3, 0.144)), url(../images/layout/1.webp) no-repeat center / cover;
+        &-content {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            justify-items: center;
+
+
+            @include media(850px) {
+                grid-template-columns: 1fr;
+                row-gap: 3.5rem;
+            }
+
+            &-inner {
+                display: grid;
+                grid-template-columns: repeat(2, 10rem);
+                grid-gap: 5rem;
+                &-item {
+                    border: 10px solid rgba(204, 204, 204, 0.4);
+                    gap: 2rem !important;
+                }
+            }
+            &-text {
+                align-self: end;
+                text-align: right;
+
+                @include media(850px) {
+                 text-align: center;
+                }
+            }
+        }
+    }
+}

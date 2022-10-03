@@ -1,0 +1,18 @@
+.section {
+    &-realfine {
+        background: url(../images/realfine/1.webp) no-repeat center/ cover;
+        header {
+            padding-bottom: 4rem;
+
+            @include media(768px) {
+                padding-bottom: 3rem !important;
+            } 
+            h2 {
+                font-weight: bold;
+            }
+        }
+        &-content { 
+
+        }
+    }
+}
